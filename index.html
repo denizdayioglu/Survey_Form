@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<body>
+    <header class="header">
+        <h1 id="title" class="text-center">Programming Survey Form</h1>
+        <p id="description" class="description-center">Please indicate your programming goals in the survey form</p>
+    </header>
+
+    <form id="survey-form">
+        <div class="form">
+            <label id="name-label" for="name">Name </label>
+            <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Enter your name"
+            required
+            />
+        </div>
+        <div class="form">
+            <label id="email-label" for="email">E-Mail</label>
+            <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your Email"
+            required
+            />
+        </div>
+        <div class="form">
+            <label id="number-label" for="number">Age<span class="clue">(Optional)</span></label>
+            <input
+            type="number"
+            name="age"
+            id="number"
+            class="form-control"
+            min="10"
+            max="99"
+            placeholder="Age"
+            />
+        </div>
+        <div class="form">
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Current Role</option>
+                <option value="Student">Student</option>
+                <option value="Full-Time">Full-Time Job</option>
+                <option value="Part-Time">Part-Time Job</option>
+                <option value="Unemployed">Unemployed</option>
+            </select>
+        </div>
+        <div class="form">
+            <p>How did you hear about us?</p>
+            <label>
+                <input 
+                type="radio"
+                name="platform"
+                value="Facebook"
+                class="input-radio"
+                checked
+                />  
+                Facebook      
+            </label>
+            <label>
+                <input
+                type="radio"
+                name="platform"
+                value="Twitter"
+                class="input-radio"
+                />
+                Twitter
+            </label>
+            <label>
+                <input
+                type="radio"
+                name="platform"
+                value="Instagram"
+                class="input-radio"
+                />
+                Instagram
+            </label>
+            <label>
+                <input
+                type="radio"
+                name="platform"
+                value="Advertisement"
+                class="input-radio"
+                />
+                Advertisement
+            </label>
+         </div>
+            
+            <div class="form">
+                <p>Which programming language you want to learn?
+                    <span class="clue">(Check all that apply)</span>
+                </p>
+
+                <label>
+                    <input
+                    type="checkbox"
+                    name="prefer"
+                    value="C"
+                    class="input-checkbox"
+                    />
+                    C
+                </label>
+                <label>
+                    <input
+                    type="checkbox"
+                    name="prefer"
+                    value="C#"
+                    class="input-checkbox"
+                    />
+                    C#
+                </label>
+                <label>
+                    <input
+                    type="checkbox"
+                    name="prefer"
+                    value="Python"
+                    class="input-checkbox"
+                    />
+                    Python
+                </label>
+                <label>
+                    <input
+                    type="checkbox"
+                    name="prefer"
+                    value="R"
+                    class="input-checkbox"
+                    />
+                    R
+                </label>
+                <label>
+                    <input
+                    type="checkbox"
+                    name="prefer"
+                    value="Java"
+                    class="input-checkbox"
+                    />
+                    Java
+                </label>
+                <label>
+                    <input
+                    type="checkbox"
+                    name="prefer"
+                    value="Other"
+                    class="input-checkbox"
+                    />
+                    Other
+                </label>
+            </div>
+            <div class="form">
+                <p>Any comments or suggestions?</p>
+                <textarea 
+                id="comments"
+                class="input-textarea"
+                name="comment"
+                placeholder="Enter your comments"
+                />
+            </textarea>
+            </div>
+
+            <div class="form">
+                <button type="submit"
+                id="submit"
+                class="submit-button"
+                />
+                Submit
+                </button>
+            </div>
+
+        </form>
+
+</body>
+</html>
